@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="image">
+        <img src="asset/STERLING-LOGO.png" alt="logo" width="120px">
+        <h1><span>Your</span> Interest...<span>Our</span> Existence...</h1>
+        <h2>Please rate us on a scale of 1 to 3 with 1 being the lowest, and 3 being the highest.</h2>
+   <form action="">
+    <p>1. On a scale of 1 to 3, how often do you use our products?</p>
+    <input type="radio" name="question1" id="fair1">1
+    <input type="radio" name="question1" id="good1">2
+    <input type="radio" name="question1" id="excellent1">3
+
+   <p>2. On a scale of 1 to 3, how easy was it to use our products?</p>
+    <input type="radio" name="question2" id="fair2">1
+    <input type="radio" name="question2" id="good2">2
+    <input type="radio" name="question2" id="excellent2">3
+
+    <p>3. On a scale of 1 to 3, how prompt was our team able to respond to your enquiry?</p>
+    <input type="radio" name="question3" id="fair3">1
+    <input type="radio" name="question3" id="good3">2
+    <input type="radio" name="question3" id="excellent3">3
+
+    <p>4. On a scale of 1 to 3, rate your satisfaction with our team in resolving your enquiry.</p>
+    <input type="radio" name="question4" id="fair4">1
+    <input type="radio" name="question4" id="good4">2
+    <input type="radio" name="question4" id="excellent4">3
+
+    <p>5. On a scale of 1 to 3, how likely are you to use our services again?</p>
+    <input type="radio" name="question5" id="fair5">1
+    <input type="radio" name="question5" id="good5">2
+    <input type="radio" name="question5" id="excellent5">3
+
+    <p>6. On a scale of 1 to 3, how likely are you to recommend us to your friends or colleagues?</p>
+    <input type="radio" name="question6" id="fair6">1
+    <input type="radio" name="question6" id="good6">2
+    <input type="radio" name="question6" id="excellent6">3
+
+    <p>7. On a scale of 1 to 3, how saisfied are you with your overall experience?</p>
+    <input type="radio" name="question7" id="fair7">1
+    <input type="radio" name="question7" id="good7">2
+    <input type="radio" name="question7" id="excellent7">3
+
+    <p>Please tell us how to serve <span>YOU</span> better.</p>
+    <input type="text" placeholder="Please state your comments" id="text" rows="15" column="10"><br><br>
+
+
+   <input type="submit" name="submit" value="Submit-survey" onclick="result()" id="class">
+
+</form>
+    </div>
+
+<script type="text/Javascript">
+function result() {
+var totalScore=0;
+var score1=0;
+var score2=0;
+var score3=0;
+var score4=0;
+var score5=0;
+var score6=0;
+var score7=0;
+
+if (document.getElementById('fair1').checked) 
+{score1=3;
+}
+if (document.getElementById('good1').checked) {score1=4;}
+if (document.getElementById('excellent1').checked) {score1=5;}
+if (document.getElementById('fair2').checked) {score2=3;}
+if (document.getElementById('good2').checked) {score2=4;}
+if (document.getElementById('excellent2').checked) {score2=5;}
+if (document.getElementById('fair3').checked) {score3=3;}
+if (document.getElementById('good3').checked) {score3=4;}
+if (document.getElementById('excellent3').checked) {score3=5;}
+if (document.getElementById('fair4').checked) {score4=3;}
+if (document.getElementById('good4').checked) {score4=4;}
+if (document.getElementById('excellent4').checked) {score4=5;}
+if (document.getElementById('fair5').checked) {score5=3;}
+if (document.getElementById('good5').checked) {score5=4;}
+if (document.getElementById('excellent5').checked) {score5=5;}
+if (document.getElementById('fair6').checked) {score6=3;}
+if (document.getElementById('good6').checked) {score6=4;}
+if (document.getElementById('excellent6').checked) {score6=5;}
+if (document.getElementById('fair7').checked) {score7=3;}
+if (document.getElementById('good7').checked) {score7=4;}
+if (document.getElementById('excellent7').checked) {score7=5;}
+
+totalScore=score1+score2+score3+score4+score5+score6+score7;
+
+//+totalscore shows d mark/
+if (totalScore<20) {
+    document.write("Thank you for filling the survey and we apologize for the bad experience. Please, be rest assured we are working to ensure you don't experience this again:"+totalScore);  
+}
+else if (totalScore>30) {
+    document.write("Thank you for filling the survey and we are happy you had a good experience.Please be rest assured we will continue to serve you better." +totalScore);
+}
+else {
+    document.write("Thank You for filling the survey and helping us to serve you better: "+totalScore);
+}
+
+
+
+}
+</script>
+</body>
+</html>

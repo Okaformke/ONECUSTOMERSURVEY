@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,900;1,700&family=Red+Hat+Display&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    font-size: 10px;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+   } 
+
+body{
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url( "asset/survey2.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image{
+    display: block;
+    margin-top: 15px; 
+}
+.image h1, h2{
+    font-size: 20px;
+    color: white;
+}
+span{
+    color: red;
+}
+.image h1, h2{
+    text-align: center;
+}
+form{
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+    width: 1000px;
+    border-radius: 12px;
+    padding: 15px;
+    padding-left: 4rem;
+    font-size: 18px;
+    margin-left: 18rem;
+}
+
+/*to add color to my radio buttons or change tthe background color of my radio button- accent color is used and u target d input name and not type*/
+input[name="question1"] {
+    accent-color: red;
+}
+input[name="question2"] {
+    accent-color: red;
+}
+input[name="question3"] {
+    accent-color: red;
+}
+input[name="question4"] {
+    accent-color: red;
+}
+input[name="question5"] {
+    accent-color: red;
+}
+input[name="question6"] {
+    accent-color: red;
+}
+input[name="question7"] {
+    accent-color: red;
+}
+
+#class{
+    border-color: red;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 140px;
+    border-radius: 15px;
+}
+input[name="question1"] {
+    accent-color: red;
+}
+
+#text{
+    width: 200px;
+    height: 50px;
+    
+    border-color: 2px solid red;
+}
